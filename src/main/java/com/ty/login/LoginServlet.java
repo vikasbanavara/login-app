@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet{
 		
 		UserDao dao = new UserDao();
 		User user = dao.validateUser(email, password);
-		
+		//checked
 		if(user != null) {
 			
 			HttpSession httpSession = req.getSession();
